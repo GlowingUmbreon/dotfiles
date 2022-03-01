@@ -1,0 +1,28 @@
+:root {
+  /* This makes the background transparent (https://reddit.com/s7gk70) */
+  background: url('data:image/gif;base64,R0lGODlhAQABAAD8/ywAAAAAAQABAAAIBAABBAQAOwo=') !important;
+
+  /* Remove scrollbar */
+  scrollbar-width: none !important;
+}
+
+@-moz-document url-prefix(about:) {
+  /* This makes sure that some firefox pages don't have weird blocks */
+  :root {
+    --in-content-page-background: transparent !important; 
+  }
+}
+
+@-moz-document media-document(image) {
+
+}
+
+body {
+  /* Adds a default background on most pages */
+  background: rgba(40, 42, 54, 0.8) !important;
+
+  /* Make sure it always covers the entire screen */
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0 !important;
+}

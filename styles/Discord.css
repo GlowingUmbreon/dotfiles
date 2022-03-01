@@ -1,0 +1,38 @@
+:root {
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-secondary-alt: transparent;
+    --background-tertiary: transparent;
+    --background-mobile-primary: transparent;
+    --background-mobile-secondary: transparent;
+
+    --channeltextarea-background: rgba(68, 71, 90, 0.2)
+}
+
+.messagesPopoutWrap-3zryHW,
+.contentWrapper-3vHNP2,
+.container-18GwIk,
+.popout-TdhJ6Z,
+.searchBar-jGtisZ,
+.searchBar-3TnChZ .searchBarComponent-3N7dCG,
+.markup-eYLPri code.inline,
+.markup-eYLPri code,
+.wrapper-2vIMkT,
+.menu-1QACrS {
+    background-color: rgba(68, 71, 90, 0.8);
+}
+.embedFull-1HGV2S {
+    background-color: rgba(68, 71, 90, 0.5);
+}
+.container-2cd8Mz {
+    background: transparent !important;
+}
+
+.auto-2K3UW5,
+.fade-1R6FHN {
+    scrollbar-width: none !important;
+}
+
+.form-3gdLxP {
+    margin-top: 0px;
+}
