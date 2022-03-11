@@ -6,6 +6,18 @@
   scrollbar-width: none !important;
 }
 
+:root::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  overflow:hidden;
+  background: rgba(40, 42, 54, 0.8);
+  z-index: -1;
+}
+
 @-moz-document url-prefix(about:) {
   /* This makes sure that some firefox pages don't have weird blocks */
   :root {
@@ -13,16 +25,17 @@
   }
 }
 
-@-moz-document media-document(image) {
-
+@-moz-document url-prefix(about:devtools) {
+  /* Fix devtools */
+  /* Some reason devtools is still semi broken even with these rules and I have no idea why */
+  :root::before {
+    display: none;
+  }
+  :root {
+    background: black !important;
+  }
 }
 
 body {
-  /* Adds a default background on most pages */
-  background: rgba(40, 42, 54, 0.8) !important;
-
-  /* Make sure it always covers the entire screen */
-  min-height: 100vh;
-  min-width: 100vw;
-  margin: 0 !important;
+  background: transparent !important;
 }
