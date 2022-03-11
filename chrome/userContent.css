@@ -7,6 +7,7 @@
 }
 
 :root::before {
+  /* This selector is to make sure the background is not fully transparent */
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +16,7 @@
   height: 100vh;
   overflow:hidden;
   background: rgba(40, 42, 54, 0.8);
-  z-index: -1;
+  z-index: -1000;
 }
 
 @-moz-document url-prefix(about:) {
