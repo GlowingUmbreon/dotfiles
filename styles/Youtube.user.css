@@ -1,0 +1,87 @@
+/* ==UserStyle==
+@name Transparent Youtube
+@namespace https://github.com/dotfiles
+@homepageURL https://github.com/dotfiles/github
+@supportURL https://github.com/dotfiles/github/issues
+@version 1.0.0
+@updateURL https://github.com/dotfiles/github/raw/master/styles/Youtube.user.css
+@description Youtube 👻
+@author Umbreon
+@license MIT
+@preprocessor stylus
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    :root,
+    html:not(.style-scope)[dark], :not(.style-scope)[dark]{
+        --yt-spec-general-background-a: transparent !important;
+        --yt-spec-general-background-b: transparent !important;
+        --yt-spec-brand-background-solid: rgba(40, 42, 54, 0.25) !important;
+        --yt-spec-brand-background-primary: rgba(40, 42, 54, 0.25) !important;
+        --yt-button-color: #f8f8f2 !important;
+        --yt-spec-brand-button-background: #bd93f9;
+        
+        --yt-spec-text-primary: rgb(248, 248, 242) !important;
+        --ytd-searchbox-text-color: rgb(248, 248, 242) !important;
+        --ytd-searchbox-background: transparent !important;
+        --ytd-searchbox-legacy-button-color: transparent !important;
+    }
+    
+    /*#backgroundFrontLayer {
+        /*background-image: var(--app-header-background-front-layer-background-image), linear-gradient(to bottom, transparent 0%, transparent 100%) !important;*//*
+        -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    }*/
+    
+    tp-yt-iron-dropdown.ytd-popup-container > div:nth-child(1) {
+        background-color: rgba(40, 42, 54, 0.8)
+    }
+    
+    body {
+        background: transparent !important;
+        min-height: 0px;
+        min-width: 0px;
+    }
+    
+    /* Youtube logo */
+    ytd-topbar-logo-renderer.style-scope:nth-child(4) > a:nth-child(1) > div:nth-child(1) > ytd-logo:nth-child(1) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1),
+    ytd-topbar-logo-renderer.style-scope:nth-child(2) > a:nth-child(1) > div:nth-child(1) > ytd-logo:nth-child(1) > yt-icon:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > g:nth-child(1) > path:nth-child(1) {
+        fill: rgb(189, 147, 249) !important;
+    }
+    
+    /* Seek bar */
+    .ytp-swatch-background-color {
+        background-color: rgb(189, 147, 249)
+    }
+    
+    /* Topbar */
+    ytd-masthead {
+        background: rgba(40, 42, 54, 0.8) !important;
+    }
+    
+    #voice-search-button {
+        display: none !important;
+    }
+    
+    /* Related tags */
+    .yt-related-chip-cloud-renderer.style-scope {
+        display: none;
+    }
+    
+    /*.ytp-gradient-bottom, .ytp-big-mode {
+        background: rgba(40, 42, 54, 0.5) !important;
+        height: 14px !important;
+    }*/
+    
+    html body ytd-app div#content.style-scope.ytd-app ytd-page-manager#page-manager.style-scope.ytd-app ytd-browse.style-scope.ytd-page-manager ytd-two-column-browse-results-renderer.style-scope.ytd-browse.grid-disabled div#primary.style-scope.ytd-two-column-browse-results-renderer ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer div#header.style-scope.ytd-rich-grid-renderer {
+        display: none;
+    }
+    
+    .header.ytd-playlist-panel-renderer {
+        background-color: transparent;
+    }
+    
+    .playlist-items.ytd-playlist-panel-renderer {
+        background: transparent;
+    }
+    }

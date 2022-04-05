@@ -1,3 +1,17 @@
+/* ==UserStyle==
+@name Transparent Quack
+@namespace https://github.com/dotfiles
+@homepageURL https://github.com/dotfiles/github
+@supportURL https://github.com/dotfiles/github/issues
+@version 1.0.0
+@updateURL https://github.com/dotfiles/github/raw/master/styles/DuckDuckGo.user.css
+@description DuckDuckGo 👻
+@author Umbreon
+@license MIT
+@preprocessor stylus
+==/UserStyle== */
+
+@-moz-document domain("duckduckgo.com") {
 .site-wrapper{
     background-color: transparent !important;
 }
@@ -24,5 +38,6 @@
 .modal--popout .modal__box, 
 .modal--dropdown.modal--popout .modal__box {
     background: rgba(40, 42, 54, 0.7) !important;
-    border: 1px solid rgb(34, 34, 34, 0.);
+    border: 1px solid rgb(34, 34, 34, 0);
+}
 }

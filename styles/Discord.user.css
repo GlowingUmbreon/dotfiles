@@ -1,3 +1,17 @@
+/* ==UserStyle==
+@name Transparent Discord
+@namespace https://github.com/dotfiles
+@homepageURL https://github.com/dotfiles/github
+@supportURL https://github.com/dotfiles/github/issues
+@version 1.0.0
+@updateURL https://github.com/dotfiles/github/raw/master/styles/Discord.user.css
+@description Discord 👻
+@author Umbreon
+@license MIT
+@preprocessor stylus
+==/UserStyle== */
+
+@-moz-document domain("discord.com") {
 :root {
     --background-primary: transparent;
     --background-secondary: transparent;
@@ -6,7 +20,13 @@
     --background-mobile-primary: transparent;
     --background-mobile-secondary: transparent;
 
-    --channeltextarea-background: rgba(68, 71, 90, 0.2)
+    --channeltextarea-background: rgba(68, 71, 90, 0.2);
+    
+    --interactive-normal: #f8f8f2;
+    --interactive-active: #fff;
+        
+    --status-danger: #ff5555;
+    --brand-experiment-560: #bd93f9;
 }
 
 .messagesPopoutWrap-3zryHW,
@@ -362,4 +382,88 @@ html.platform-osx #app-mount #pluginNotice {
 
 body.foldercontentopened .base-2jDfDU {
   transition: 0.2s ease !important;
+}
+
+/* Dracula Theme v1.2.5
+ *
+ * https://github.com/dracula/highlightjs
+ *
+ * Copyright 2016-present, All rights reserved
+ *
+ * Code licensed under the MIT license
+ *
+ * @author Denis Ciccale <dciccale@gmail.com>
+ * @author Zeno Rocha <hi@zenorocha.com>
+ */
+
+ .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #282a36;
+}
+
+.hljs-built_in,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-link {
+  color: #8be9fd;
+}
+
+.hljs-keyword {
+  color: #ff79c6;
+}
+
+.hljs,
+.hljs-subst {
+  color: #f8f8f2;
+}
+
+.hljs-title,
+.hljs-attr,
+.hljs-meta-keyword {
+  font-style: italic;
+  color: #50fa7b;
+}
+
+.hljs-string,
+.hljs-meta,
+.hljs-name,
+.hljs-type,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #f1fa8c;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion {
+  color: #6272a4;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-title,
+.hljs-section,
+.hljs-doctag,
+.hljs-type,
+.hljs-name,
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-literal,
+.hljs-number {
+  color: #bd93f9;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
 }
