@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name Transparent Quack
+@name Transparent DuckDuckGo
 @namespace https://github.com/dotfiles
 @homepageURL https://github.com/dotfiles/github
 @supportURL https://github.com/dotfiles/github/issues
@@ -12,32 +12,46 @@
 ==/UserStyle== */
 
 @-moz-document domain("duckduckgo.com") {
-.site-wrapper{
-    background-color: transparent !important;
-}
-
-#header_wrapper {
-    background-color: transparent !important;
-}
-
-.search-filters-wrap::after,
-.search-filters-wrap::before,
-.js-feedback-btn-wrap,
-.footer,
-.results--sidebar {
-    display: none !important;
-}
-
-.module:not(.module--carousel):not(.module--placeholder):not(.module--images):not(.module--translations):not(.module__chromeless), .sidebar-modules .module, .results--main .result:not(.result--ad).highlight, .module .module--carousel__item, .user-loc-cta, .address-detail, .tile--info, .place-detail, .badge-link, .is-atb-fullbleed .content-info__item, .atb-banner__bottom, .multi-step-mobile-onboarding__step__content, .is-mobile .results_links_deep, .is-mobile .results_links, .is-mobile .result--news, .is-mobile .related-searches, .most-visited__info-tt, .user-loc-tooltip,
-.search--home, .search--header {
-    background: rgba(40, 42, 54, 0.25) !important;
-    border: 1px solid rgb(34, 34, 34, 0.25);
-}
-
-.modal__box,
-.modal--popout .modal__box, 
-.modal--dropdown.modal--popout .modal__box {
-    background: rgba(40, 42, 54, 0.7) !important;
-    border: 1px solid rgb(34, 34, 34, 0);
-}
-}
+    .site-wrapper{
+        background-color: transparent !important;
+    }
+    
+    #header_wrapper {
+        background-color: transparent !important;
+    }
+    
+    .search-filters-wrap::after,
+    .search-filters-wrap::before,
+    .js-feedback-btn-wrap,
+    .footer,
+    .results--sidebar {
+        display: none !important;
+    }
+    
+    .module:not(.module--carousel):not(.module--placeholder):not(.module--images):not(.module--translations):not(.module__chromeless), .sidebar-modules .module, .results--main .result:not(.result--ad).highlight, .module .module--carousel__item, .user-loc-cta, .address-detail, .tile--info, .place-detail, .badge-link, .is-atb-fullbleed .content-info__item, .atb-banner__bottom, .multi-step-mobile-onboarding__step__content, .is-mobile .results_links_deep, .is-mobile .results_links, .is-mobile .result--news, .is-mobile .related-searches, .most-visited__info-tt, .user-loc-tooltip,
+    .search--home, .search--header {
+        background: rgba(40, 42, 54, 0.25) !important;
+        border: 1px solid rgb(34, 34, 34, 0.25);
+    }
+    
+    .modal__box,
+    .modal--popout .modal__box, 
+    .modal--dropdown.modal--popout .modal__box {
+        background: rgba(40, 42, 54, 0.7) !important;
+        border: 1px solid rgb(34, 34, 34, 0);
+    }
+    
+    .tag-home__item {
+        visibility: hidden;
+        position: absolute;
+    }
+    
+    .tag-home__item::after {
+        visibility: visible;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        content: "Don't be evil";
+    }
+    }
