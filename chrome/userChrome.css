@@ -17,6 +17,10 @@ window, #nav-bar{
   background-image: none !important;
 }
 
+/*html#main-window body box#navigator-toolbox-background toolbox#navigator-toolbox vbox#titlebar toolbar#TabsToolbar.browser-toolbar.titlebar-color {
+  display: none;
+}*/
+
 /* 
 ┌─┐┬┌┬┐┌─┐┬  ┌─┐
 └─┐││││├─┘│  ├┤ 

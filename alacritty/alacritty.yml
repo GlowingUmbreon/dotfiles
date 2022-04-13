@@ -11,6 +11,8 @@
 import:
   - ~/.config/alacritty/dracula.yml
 
+background_opacity: 0.8 # I have a fork with ligatures support but the fork is out of date so I need to use the old config
+
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -106,8 +108,6 @@ import:
 
   # Scrolling distance multiplier.
   #multiplier: 3
-window:
-   opacity: 0.8
 
 # Font configuration
 font:
