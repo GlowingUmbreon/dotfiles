@@ -1,0 +1,20 @@
+potential new method?
+#tabbrowser-tabpanels {
+    appearance: auto;
+}
+
+
+Other stuff
+tabbrowser-tabpanels {
+    display: block
+}
+
+browserSidebarContainer {
+    display: block;
+    flat: left | right;
+}
+
+browserContainer {
+    width: 50vw;
+    height: calc(100vh - 80px);
+}
