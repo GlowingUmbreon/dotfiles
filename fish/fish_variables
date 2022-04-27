@@ -1,6 +1,5 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export DISCORDO_TOKEN:mfa\x2eRJoBuPyRUZkfTKZPJyuIeOlYwKNpHILDJy1N8O6H8jQvEuN9qp_9Ow2z7ZziOYUNRVRaG2Xl7i6I0NnHCQxg
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:BD93F9
 SETUVAR fish_color_cancel:\x2dr
