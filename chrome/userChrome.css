@@ -47,8 +47,8 @@ by Miguel Avila
 */
 
 :root {
-    --sfwindow: rgba(40, 42, 54, 0.8);
-    --sfsecondary: rgba(68, 71, 90, 0.25);
+    --sfwindow: #1E1E2Ecc;
+    --sfsecondary: #302D41cc;
   }
   
   /* Urlbar View */

@@ -9,7 +9,7 @@
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
 import:
-  - ~/.config/alacritty/dracula.yml
+  - ~/.config/alacritty/colors.yml
 
 background_opacity: 0.8 # I have a fork with ligatures support but the fork is out of date so I need to use the old config
 
@@ -402,7 +402,7 @@ cursor:
   # the style of the active value of the normal cursor.
   #
   # See `cursor.style` for available options.
-  #vi_mode_style: None
+  vi_mode_style: Underline
 
   # Cursor blinking interval in milliseconds.
   #blink_interval: 750

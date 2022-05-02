@@ -17,7 +17,8 @@
   width: 100vw;
   height: 100vh;
   overflow:hidden;
-  background: rgba(40, 42, 54, 0.8);
+  background: #1E1E2Ecc;
+  
   z-index: -1000;
 }
 

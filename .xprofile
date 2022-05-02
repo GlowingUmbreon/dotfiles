@@ -1,0 +1,3 @@
+feh --bg-fill ~/.dotfiles/wallpaper.png &
+picom &
+keepassxc &
