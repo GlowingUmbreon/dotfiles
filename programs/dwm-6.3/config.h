@@ -6,8 +6,8 @@ static const unsigned int gappx     = 5;        /* gap pixel between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=10";
+static const char *fonts[]          = { "FiraCode NF Medium:size=10" };
+static const char dmenufont[]       = "FiraCode NF Medium:size=10";
 static const char col_black0[]		= "#161320";
 static const char col_black1[]		= "#1A1826";
 static const char col_black2[]		= "#1E1E2E";
@@ -65,6 +65,9 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_black2, "-nf", col_white, "-sb", col_black4, "-sf", col_compl, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 
+static const char *brightnessUp[] = { "xbacklight", "-inc", "10", NULL };
+static const char *brightnessDown[] = { "xbacklight", "-dec", "10", NULL };
+
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -100,8 +103,14 @@ static Key keys[] = {
 	//TAGKEYS(                        XK_8,                      7)
 	//TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ MODKEY,						XK_Print,  spawn,          SHCMD("maim -u | xclip -selection clipboard -t image/png -i")},
-	{ MODKEY|ShiftMask,				XK_Print,  spawn,          SHCMD("maim -s -u | xclip -selection clipboard -t image/png -i")},
+
+	// Clipboard
+	{ 0,						    XK_Print,  spawn,          SHCMD("maim -u | xclip -selection clipboard -t image/png -i")},
+	{ ShiftMask,				    XK_Print,  spawn,          SHCMD("maim -s -u | xclip -selection clipboard -t image/png -i")},
+
+	// Brightness
+	{0, 							0x1008ff02, spawn, {.v = brightnessUp } },
+	{0, 							0x1008ff03, spawn, {.v = brightnessDown } },
 };
 
 /* button definitions */
