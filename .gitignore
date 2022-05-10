@@ -1,5 +1,6 @@
-dwm
-slstatus
+/programs/dwm/dwm
+/programs/slstatus/slstatus
+/programs/surf/surf
 
 # Prerequisites
 *.d

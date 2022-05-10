@@ -605,7 +605,7 @@ geturi(Client *c)
 	const char *uri;
 
 	if (!(uri = webkit_web_view_get_uri(c->view)))
-		uri = "about:blank";
+		uri = "https://duckduckgo.com/";
 	return uri;
 }
 
@@ -1429,7 +1429,7 @@ showview(WebKitWebView *v, Client *c)
 		                               curconfig[ZoomLevel].val.f);
 
 	setatom(c, AtomFind, "");
-	setatom(c, AtomUri, "about:blank");
+	setatom(c, AtomUri, "https://duckduckgo.com/");
 }
 
 GtkWidget *
@@ -2134,7 +2134,7 @@ main(int argc, char *argv[])
 	if (argc > 0)
 		arg.v = argv[0];
 	else
-		arg.v = "about:blank";
+		arg.v = "https://duckduckgo.com/";
 
 	setup();
 	c = newclient(NULL);

@@ -3,7 +3,7 @@
 # See the LICENSE file for copyright and license details. 
 #
 
-xidfile="$HOME/tmp/tabbed-surf.xid"
+xidfile="/tmp/tabbed-surf.xid"
 uri=""
 
 if [ "$#" -gt 0 ];
