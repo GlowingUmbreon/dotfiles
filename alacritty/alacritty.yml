@@ -11,8 +11,6 @@
 import:
   - ~/.config/alacritty/colors.yml
 
-background_opacity: 0.8 # I have a fork with ligatures support but the fork is out of date so I need to use the old config
-
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -25,7 +23,7 @@ background_opacity: 0.8 # I have a fork with ligatures support but the fork is o
   # available, otherwise `xterm-256color` is used.
   #TERM: alacritty
 
-#window:
+window:
   # Window dimensions (changes require restart)
   #
   # Number of lines/columns (not pixels) in the terminal. The number of columns
@@ -69,7 +67,7 @@ background_opacity: 0.8 # I have a fork with ligatures support but the fork is o
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  #opacity: 1.0
+  opacity: 0.8
 
   # Startup Mode (changes require restart)
   #
@@ -428,8 +426,8 @@ cursor:
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-#shell:
-#  program: /bin/bash
+shell:
+  program: /bin/zsh
 #  args:
 #    - --login
 

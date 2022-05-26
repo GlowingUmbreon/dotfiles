@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           XKCD
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Umbreon
+==/UserStyle== */
+
+@-moz-document domain("xkcd.com") { 
+    body {
+        background-color: #1E1E2E;
+        color: #D9E0EE;
+    }
+    
+    a {
+        color: #89DCEB;
+    }
+    
+    #middleContainer {
+        background-color: #1E1E2E;
+        border-color: #D9E0EE;
+    }
+    
+    #topContainer,
+    #bottom {
+        display: none;
+    }
+}

@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name           Stack Exchange
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Umbreon
+==/UserStyle== */
+
+@-moz-document domain("stackoverflow.com") {
+    /* Fix topbar */
+    body, .s-topbar {
+        margin-top: 0em;
+    }
+
+    /* Hide elements */
+    .js-consent-banner, /* Cookies Popup */
+    #announcement-banner, /* Announcement banner */
+    .js-freemium-cta /* Teams sidebar */,
+    .s-navigation /* Topbar navigation buttons */ {
+        display: none;
+    }
+}
