@@ -8,17 +8,17 @@
 
 @-moz-document domain("xkcd.com") { 
     body {
-        background-color: #1E1E2E;
-        color: #D9E0EE;
+        background-color: #1e1e2e;
+        color: #cdd6f4;
     }
     
     a {
-        color: #89DCEB;
+        color: #89b4fa;
     }
     
     #middleContainer {
-        background-color: #1E1E2E;
-        border-color: #D9E0EE;
+        background-color: #1e1e2e;
+        border-color: #cdd6f4;
     }
     
     #topContainer,

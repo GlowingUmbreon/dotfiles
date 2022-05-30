@@ -1,6 +1,6 @@
 /* Loading */
 browser {
-  background-color: #1E1E2E !important;
+  background-color: #1e1e2e !important;
 }
 
 /* Tabs */
@@ -53,8 +53,8 @@ by Miguel Avila
 */
 
 :root {
-  --sfwindow: #302D41;
-  --sfsecondary: #1E1E2E;
+  --sfwindow: #181825;
+  --sfsecondary: #1e1e2e;
 }
 
 /* Urlbar View */
@@ -206,7 +206,7 @@ toolbarbutton.bookmark-item:not(.subviewbutton) {
 }
 
 .urlbarView-url {
-  color: #dedede !important;
+  color: #cdd6f4 !important;
 }
 
 /* Disable elements  */
