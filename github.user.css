@@ -132,10 +132,12 @@
         $crust = #11111b
     }
 
-    [data-color-mode="light"][data-light-theme="dark"],
-    [data-color-mode="dark"][data-dark-theme="dark"],
-    [data-color-mode="light"][data-light-theme="light"],
-    [data-color-mode="dark"][data-dark-theme="light"]{
+    [data-color-mode="light"][data-light-theme*="dark"],
+    [data-color-mode="light"][data-light-theme*="light"],
+    [data-color-mode="dark"][data-dark-theme*="dark"],
+    [data-color-mode="dark"][data-dark-theme*="light"],
+    [data-color-mode="auto"][data-dark-theme*="dark"],
+    [data-color-mode="auto"][data-dark-theme*="light"] {
         color-scheme: $type;
         
         --color-canvas-default-transparent: rgba(13, 17, 23, 0);
