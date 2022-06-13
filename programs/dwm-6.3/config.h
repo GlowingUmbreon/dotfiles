@@ -6,25 +6,21 @@ static const unsigned int gappx     = 5;        /* gap pixel between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "FiraCode NF Medium:size=10" };
-static const char dmenufont[]       = "FiraCode NF Medium:size=10";
-static const char col_black0[]		= "#161320";
-static const char col_black1[]		= "#1A1826";
-static const char col_black2[]		= "#1E1E2E";
-static const char col_black3[]		= "#302D41";
-static const char col_black4[]		= "#575268";
-static const char col_white[]		= "#D9E0EE";
-static const char col_lavend[]		= "#D9E0EE";
-static const char col_compl[]       = "#F5C2E7";
-static const char col_rose[]        = "#F5E0DC";
+static const char *fonts[]          = { "Inter:size=10" };
+static const char dmenufont[]       = "Inter:size=10";
+static const char col_text[]		= "#cdd6f4";
+static const char col_lavender[]	= "#b4befe";
+static const char col_base[]		= "#1e1e2e";
+static const char col_overlay0[]	= "#6c7086";
+static const char col_rosewater[]	= "#f5e0dc";
 static const char *colors[][3]      = {
-	/*               fg         bg          border   */
-	[SchemeNorm] = { col_white, col_black2, col_black4 },
-	[SchemeSel]  = { col_compl, col_black4, col_lavend  },
+	/*               fg             bg            border   */
+	[SchemeNorm] = { col_text,	    col_base,     col_overlay0 },
+	[SchemeSel]  = { col_rosewater, col_overlay0, col_lavender },
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "" };
+static const char *tags[] = { "term", "code", "game", "misc", "webs" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -62,7 +58,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_black2, "-nf", col_white, "-sb", col_black4, "-sf", col_compl, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_base, "-nf", col_text, "-sb", col_overlay0, "-sf", col_rosewater, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 
 static const char *brightnessUp[] = { "xbacklight", "-inc", "10", NULL };
