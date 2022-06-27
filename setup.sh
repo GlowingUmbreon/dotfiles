@@ -1,5 +1,6 @@
 ln -s ~/.dotfiles/alacritty ~/.config
-ln -s ~/.dotfiles/surf ~/.config
+ln -s ~/.dotfiles/bspwm ~/.config
+ln -s ~/.dotfiles/sxhkd ~/.config
 ln -s ~/.dotfiles/chrome ~/.mozilla/firefox/urc4nnbz.default-default
 ln -s ~/.dotfiles/picom.conf ~/.config
 
