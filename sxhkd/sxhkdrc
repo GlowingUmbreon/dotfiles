@@ -18,7 +18,7 @@ shift + Print
 	pamixer {-i,-d} 5
 
 # Brightness
-{0x1008ff02, 0x1008ff03}
+{XF86MonBrightnessUp, XF86MonBrightnessDown}
 	xbacklight {-inc,-dec} 10
 
 #
