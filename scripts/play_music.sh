@@ -1,0 +1,1 @@
+jq -r '"ytdl://\(.[0].videos[].videoId)"' ~/.dotfiles/freetube/playlist.json  | mpv --no-video --shuffle --playlist=-

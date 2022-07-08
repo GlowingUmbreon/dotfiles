@@ -2,9 +2,9 @@
 # Personal hotkeys
 # xev -event keyboard
 
-# immersive
+# Border toggle
 super + b
-	~/.dotfiles/sxhkd/toggleImmersive.sh
+	~/.dotfiles/scripts/toggle_borders.sh
 
 # Print screen
 Print
