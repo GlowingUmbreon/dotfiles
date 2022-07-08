@@ -13,8 +13,14 @@ feh --bg-fill ~/.dotfiles/wallpaper.png &
 pipewire &
 pipewire-pulse &
 keepassxc &
-setxkbmap -layout gb &
-setxkbmap -option caps:backspace &
+(
+    if [ $HOST = "umbreon-thinkpadd" ]; then
+        setxkbmap -layout us
+    else
+        setxkbmap -layout us
+    fi
+    setxkbmap -option caps:backspace
+)
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 

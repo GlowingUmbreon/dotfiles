@@ -2,6 +2,10 @@
 # Personal hotkeys
 # 
 
+# immersive
+super + b
+	~/.dotfiles/sxhkd/toggleImmersive.sh
+
 # Print screen
 Print
 	maim -u | xclip -selection clipboard -t image/png -i
