@@ -1,6 +1,6 @@
 #
 # Personal hotkeys
-# 
+# xev -event keyboard
 
 # immersive
 super + b
@@ -14,18 +14,12 @@ shift + Print
 	maim -s -u | xclip -selection clipboard -t image/png -i
 
 # Volume control
-XF86AudioRaiseVolume
-	pamixer -i 5
-
-XF86AudioLowerVolume
-	pamixer -d 5
+{XF86AudioRaiseVolume, XF86AudioLowerVolume}
+	pamixer {-i,-d} 5
 
 # Brightness
-0x1008ff02
-	xbacklight -inc 10
-
-0x1008ff03
-	xbacklight -dec 10
+{0x1008ff02, 0x1008ff03}
+	xbacklight {-inc,-dec} 10
 
 #
 # wm independent hotkeys
