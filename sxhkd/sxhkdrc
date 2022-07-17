@@ -11,7 +11,7 @@ Print
 	maim -u | xclip -selection clipboard -t image/png -i
 
 shift + Print
-	maim -s -u | xclip -selection clipboard -t image/png -i
+	maim -su | xclip -selection clipboard -t image/png -i
 
 # Volume control
 {XF86AudioRaiseVolume, XF86AudioLowerVolume}
@@ -30,7 +30,7 @@ super + Return
 	alacritty
 
 # program launcher
-super + @space
+super + space
 	dmenu_run
 
 # make sxhkd reload its configuration files:
