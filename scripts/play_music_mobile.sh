@@ -1,7 +1,7 @@
 termux-notification \
-    --ongoing \
     --id 'music' \
     --type 'media' \
+    --priority 'min' \
     --media-next $'echo \'{"command": ["playlist-next"]}\' | socat - ~/mpvsocket' \
     --media-pause $'echo \'{"command": ["cycle", "pause"]}\' | socat - ~/mpvsocket' \
     --media-play $'echo \'{"command": ["cycle", "pause"]}\' | socat - ~/mpvsocket' \
