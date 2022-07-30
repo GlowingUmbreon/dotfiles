@@ -3,7 +3,7 @@
 cd ~/.dotfiles/generated
 rm newpipe.db
 
-# create schema
+# create database
 sqlite3 newpipe.db < ~/.dotfiles/scripts/mobile/freetube_to_newpipe_schema.sql
 
 # playlists
@@ -25,3 +25,9 @@ sqlite3 newpipe.db ".import --csv -v playlist_stream_join.csv playlist_stream_jo
 echo '"uid","service_id","url","name","avatar_url","subscriber_count","description","notification_mode"' > subscriptions.csv
 jq -r '.subscriptions | to_entries | .[] | .value+{key:.key} | [.key+1,0,"https://www.youtube.com/channel/"+.id,.name,.thumbnail,0,"",0] | @csv' ~/.dotfiles/freetube/subscriptions.db >> subscriptions.csv
 sqlite3 newpipe.db ".import --csv -v subscriptions.csv subscriptions"
+
+# Compress the file
+zip newpipe.zip newpipe.db
+
+# Delete temporary files
+rm newpipe.db playlist_stream_join.csv playlists.csv streams.csv subscriptions.csv
