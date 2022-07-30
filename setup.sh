@@ -1,9 +1,10 @@
-ln -s ~/.dotfiles/alacritty ~/.config
-ln -s ~/.dotfiles/bspwm ~/.config
-ln -s ~/.dotfiles/sxhkd ~/.config
-ln -s ~/.dotfiles/chrome ~/.mozilla/firefox/urc4nnbz.default-default
-ln -s ~/.dotfiles/picom.conf ~/.config
-ln -s ~/.dotfiles/mpv ~/.config
+# programs
+ln -s ~/.dotfiles/programs/alacritty ~/.config
+ln -s ~/.dotfiles/programs/bspwm ~/.config
+ln -s ~/.dotfiles/programs/sxhkd ~/.config
+ln -s ~/.dotfiles/programs/chrome ~/.mozilla/firefox/urc4nnbz.default-default
+ln -s ~/.dotfiles/programs/picom ~/.config
+ln -s ~/.dotfiles/programs/mpv ~/.config
 
 ln -s ~/.dotfiles/.zshrc ~
 

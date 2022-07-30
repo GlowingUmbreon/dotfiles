@@ -1,3 +1,5 @@
+# Used to make splitscreen
+
 gap=$(bspc config window_gap)
 if [ $gap -eq 0 ]; then
 	bspc config window_gap 12

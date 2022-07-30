@@ -1,7 +1,8 @@
+# Plays the freetube playlist in mpv with termux media controls
+
 termux-notification \
     --id 'music' \
     --type 'media' \
-    --priority 'max' \
     --media-next $'echo \'{"command": ["playlist-next"]}\' | socat - ~/mpvsocket' \
     --media-pause $'echo \'{"command": ["cycle", "pause"]}\' | socat - ~/mpvsocket' \
     --media-play $'echo \'{"command": ["cycle", "pause"]}\' | socat - ~/mpvsocket' \
